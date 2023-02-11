@@ -1,0 +1,9 @@
+version: "3"
+services:
+  remotely:
+    image: immybot/remotely
+    ports:
+      - 5000:5000
+    volumes:
+      - ./data:/remotely-data
+    restart: always
